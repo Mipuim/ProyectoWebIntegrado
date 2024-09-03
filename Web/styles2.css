@@ -1,0 +1,10 @@
+
+.contenedor {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+.contenedor .titulo{
+    background: #000;
+}

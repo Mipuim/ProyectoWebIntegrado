@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows:auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". . ."
+                        ". contenedor .";
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(84, 115, 109);
+    margin: 0;
+}
+body .contenedor{
+    grid-area: contenedor;
+    justify-self: stretch;
+    align-self: stretch;
+}
+body .ola1{
+    background: rgba(8, 9, 50, 0.8);
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    margin-top: auto;
+    height: 200px;
+    animation: wave1 3s ease-in-out infinite;
+}
+body .ola2{
+    background: rgba(20, 62, 154, 0.5);
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    margin-top: auto;
+    height: 200px;
+    animation: wave2 3s ease-in-out infinite;
+}
+body .ola3{
+    background: rgba(11, 86, 96, 0.5);
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    margin-top: auto;
+    height: 150px;
+    animation: wave3 3s ease-in-out infinite;
+}
+
+/**********************************************************************************/
+/*trabajar con el formulario del login*/
+.contenedor{
+    background: transparent;
+    background-size: 400% 400%;
+    /*border: 2px solid rgba(255, 255, 255, .5);*/
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+.contenedor h1{
+    font-size: 36px;
+    text-align: center;
+}
+.contenedor .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /*background: darkcyan;*/
+    margin: 20px 0; /*sin el cero se sale del div*/
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent; /*para que se vea el color del fondo*/
+    border: none; /*quita los bordes*/
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 15px 15px 15px;
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.contenedor .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+.remember label input{
+    accent-color: #fff;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.remember a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.contenedor .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.contenedor .btn:hover{
+    background: rgb(35, 58, 59);
+    color: #fff;
+}
+.contenedor .register-lin{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.register-lin p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600; /*negrita en Registrate*/
+
+}
+.register-lin p a:hover{
+    text-decoration: underline;
+}
+
+/**********************************************************************************/
+/*trabajar con la animación de ola*/
+@keyframes wave3{
+    0%, 100%{
+        clip-path: polygon(
+            0% 35%,
+            10% 38%,
+            33% 44%,
+            54% 60%,
+            70% 65%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+        
+    }
+
+    50%{
+        clip-path: polygon(
+            0% 60%,
+            18% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+
+        );
+    }
+}
+@keyframes wave2{
+    0%, 100%{
+        clip-path: polygon(
+            0% 70%,
+            15% 65%,
+            34% 66%,
+            40% 60%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+        
+    }
+
+    50%{
+        clip-path: polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+@keyframes wave1{
+    0%, 100%{
+        clip-path: polygon(
+            0% 60%,
+            20% 70%,
+            30% 77%,
+            45% 75%,
+            60% 68%,
+            70% 60%,
+            80% 55%,
+            90% 50%,
+            100% 45%,
+            100% 100%,
+            0% 100%
+        );   
+    }
+    50%{
+        clip-path: polygon(
+            0% 58%,
+            20% 47%,
+            33% 46%,
+            54% 50%,
+            70% 62%,
+            84% 66%,
+            85% 65%,
+            90% 64%,
+            100% 60%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+
+/*
+@keyframes wave3{
+    0%, 100%{
+        clip-path: polygon(
+            0% 35%,
+            10% 38%,
+            33% 44%,
+            54% 60%,
+            70% 65%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+        
+    }
+
+    50%{
+        clip-path: polygon(
+            0% 60%,
+            18% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+
+        );
+    }*/
