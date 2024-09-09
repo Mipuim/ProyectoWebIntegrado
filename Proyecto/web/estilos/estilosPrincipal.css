@@ -12,7 +12,7 @@ body{
 }
 .header {
     width: 100%;
-    font-size: 50px; /*tamaño de la letra que usara todo el contenido de la clase header... recomiendo cambiarlo en los elementos internos y no aca*/
+    font-size: 60px; /*tamaño de la letra que usara todo el contenido de la clase header... recomiendo cambiarlo en los elementos internos y no aca*/
     text-align: center;
     padding: 20px 0;
     /*box-shadow: 2px 2px 20px rgba(0, 0, 0, 25);*/
@@ -24,14 +24,14 @@ body{
     /*max-width: 1000px;*/
     /*border: 10px solid #000000;*/
     margin: auto;
-    font-size: 50px; /*tamaño de la letra que usara todo el contenido del contenedor... recomiendo cambiarlo en los elementos internos y no aca*/
+    /*font-size: 50px; /*tamaño de la letra que usara todo el contenido del contenedor... recomiendo cambiarlo en los elementos internos y no aca*/
     line-height: 50px;
     text-align: center;
 }
 .contenedor > div{
     /*display: block;*/
     padding:10px;
-    color: #ffffff;
-    background: #24648f;
+    color: #000;
+    background: #ffffff;
 /*    box-shadow: 2px 2px 20px rgba(0, 0, 0, 25);*/
 }

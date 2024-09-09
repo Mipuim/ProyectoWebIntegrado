@@ -13,7 +13,7 @@ body{
                         ". contenedor .";
     align-items: center;
     min-height: 100vh;
-    background: rgb(84, 115, 109);
+    background: #7789a3;
     margin: 0;
 }
 body .contenedor{

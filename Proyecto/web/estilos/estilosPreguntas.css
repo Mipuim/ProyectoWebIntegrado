@@ -1,9 +1,41 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 3 set. 2024, 14:00:32
-    Author     : SARA
-*/
-
+body {
+    font-family: "Times New Roman", Times, serif;        
+    background-color: #ffffff;
+    margin: 0;   
+    padding: 0;            
+}
+           
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+}
+.faq-header {                
+    text-align: center;            
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.faq-item {            
+    margin-bottom: 15px;
+    line-height: 1.4; /* Ajusta el espaciado entre líneas */
+    font-weight: normal; /* Asegúrate de que no esté en bold */
+}
+.faq-question {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.faq-answer {               
+    display: none;    
+    padding: 10px;    
+    background: #f9f9f9;    
+    border: 1px solid #ddd;    
+    border-radius: 5px;    
+    margin-top: 5px;    
+    font-size: 16px
+}

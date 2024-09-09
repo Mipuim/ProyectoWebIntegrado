@@ -11,7 +11,7 @@ body{
 }
 
 .container {
-    width: 1200px;
+    width: auto;
     margin: 0 auto;
 }
 
@@ -81,12 +81,22 @@ body{
     background-color: #00C3FF;
 }
 
-@media(max-width:991px){
+@media(max-width:1140px){
     .footer-row{
         text-align: center;
     }
     .footer-links{
         width: 100%;
         margin-bottom: 30px;
+    }
+    .company-description {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+@media(max-width:675px){
+    .company-description {
+        margin-left: 80px;
+        margin-right: 80px;
     }
 }

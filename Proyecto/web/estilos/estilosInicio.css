@@ -2,10 +2,15 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
 }
 .titulo{
-    background: #000;
+    background: #fff;
+}
+.imagen-ancha{
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita el espacio en blanco debajo de la imagen */
 }
 /***********************************************************************/
 .catProductos{
@@ -17,68 +22,88 @@
                          "cat_productos1     cat_productos2   cat_productos3    cat_productos4  cat_productos5";
 }
 .catProductos .titulo_cat_productos{ /*color en .titulo*/
-    grid-column-start: titulo_cat_productos;
-    grid-column-end: titulo_cat_productos;
+    grid-area: titulo_cat_productos;
+    font-size: 60px;
+    background: #fff;
+    color: #000;
+    margin: 30px;
 }
 .catProductos .cat_productos1{
-    background: #ff4545;
-    grid-column-start: cat_productos1;
-    grid-column-end: cat_productos1;
+    grid-area: cat_productos1;
 }
 .catProductos .cat_productos2{
-    background: #ff4545;
-    grid-column-start: cat_productos2;
-    grid-column-end: cat_productos2;
+    grid-area: cat_productos2;
 }
 .catProductos .cat_productos3{
-    background: #ff4545;
-    grid-column-start: cat_productos3;
-    grid-column-end: cat_productos3;
+    grid-area: cat_productos3;
 }
 .catProductos .cat_productos4{
-    background: #ff4545;
-    grid-column-start: cat_productos4;
-    grid-column-end: cat_productos4;
+    grid-area: cat_productos4;
 }
 .catProductos .cat_productos5{
-    background: #ff4545;
-    grid-column-start: cat_productos5;
-    grid-column-end: cat_productos5;
+    grid-area: cat_productos5;
+}
+.catProductos .cat_productos1, 
+.catProductos .cat_productos2, 
+.catProductos .cat_productos3, 
+.catProductos .cat_productos4, 
+.catProductos .cat_productos5 {
+    background: #fff;
+    /*background: #ff4545;*/
+    font-size: 40px;
+    color: #676767;
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajusta el color y difuminado de la sombra */
+}
+.imagenes-categoria{
+    width: 100%; /* Ajusta la imagen para llenar el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Opcional: Hace que la imagen cubra el área del contenedor sin distorsionarse */
 }
 /***********************************************************************/
 .promos{
     display: grid;
-    grid-gap: 10px;
+    /*grid-gap: 10px;*/
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background: #fff;
+    color: #000;
 }
 /*color de promos titulos en .titulos arriba*/
-.promos .carrusel_promos{
+/*.promos .carrusel_promos{
     background: #ff4545;
-}
+*/
 /***********************************************************************/
 .detalles{display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "foto2 texto2 texto2"
                         "texto3 texto3 foto3";
 }
+.foto2, .foto3, .texto2, .texto3{
+    background-color: #fff;
+    color: #676767;
+    justify-self: stretch;
+    align-self: center;
+}
 .detalles .foto2{
-    background: #111;
     grid-area: foto2;
 }
 .detalles .foto3{
-    background: #393f72;
     grid-area: foto3;
 }
 .detalles .texto2{
-    background: #35454b;
     grid-area: texto2;
+    
 }
 .detalles .texto3{
-    background: #162a31;
     grid-area: texto3;
+}
+img{
+    width: 100%; /* Ajusta la imagen para llenar el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Opcional: Hace que la imagen cubra el área del contenedor sin distorsionarse */
 }
 
 
@@ -91,15 +116,15 @@
     }
 
     .catProductos {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: "titulo_cat_productos"
-                                "cat_productos1"
-                                "cat_productos2"
-                                "cat_productos3"
-                                "cat_productos4"
-                                "cat_productos5";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr 1fr 1fr ;
+        grid-template-areas: 
+            "titulo_cat_productos titulo_cat_productos"
+            "cat_productos1 cat_productos2"
+            "cat_productos3 cat_productos4"
+            "cat_productos5 .";
     }
+    
 
     .promos {
         grid-template-columns: 1fr;
@@ -109,10 +134,10 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
         grid-template-areas: 
-            "foto2"
             "texto2"
-            "foto3"
-            "texto3";
+            "foto2"
+            "texto3"
+            "foto3";
     }
 
     .header {
@@ -121,7 +146,7 @@
 }
 
 /* Estilos para tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1314px) {
     .contenedor {
         grid-template-columns: 1fr;
         font-size: 40px;
@@ -129,10 +154,10 @@
 
     .catProductos {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: auto 1fr 1fr;
         grid-template-areas: 
         "titulo_cat_productos titulo_cat_productos titulo_cat_productos"
-         "cat_productos1 cat_productos2 cat_productos3"
+        "cat_productos1 cat_productos2 cat_productos3"
         "cat_productos4 cat_productos5 ."
        ;   
     }
@@ -152,6 +177,44 @@
     .header {
         font-size: 40px;
     }
+}
+
+.slider-frame {
+	width: 100%;
+    height: 100%;
+	/*margin:50px auto 0;*/
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
 /*
         <div class="detalles">

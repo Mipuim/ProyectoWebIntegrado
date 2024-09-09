@@ -30,8 +30,9 @@
                     <div class="footer-links">
                         <h4>Ayuda</h4>
                         <ul>
-                                <li><a href="#">Sugerencias</a></li>
-                                <li><a href="#">Reclamos</a></li>
+                            <!--    <li><a href="#">Sugerencias</a></li -->
+                                <li><a href="indexPreguntas.jsp">Preguntas Frecuentes</a></li>
+                                <li><a href="indexReclamaciones.jsp">Reclamos</a></li>
                                 <li><a href="#">Comentarios</a></li>
                                 <li><a href="#">Terminos y Condiciones</a></li>
                         </ul>

@@ -17,27 +17,61 @@
     <body>
         <div class="header">header</div>
         <div class="header">nav</div>
-        <div class="contenedor">
-            <div class="imagenInicio">imagen llamativa o video</div>
-            <div class="catProductos">
-                <div class="titulo_cat_productos titulo">div cat productos</div>
-                <div class="cat_productos1">div cat productos1</div>
-                <div class="cat_productos2">div cat productos2</div>
-                <div class="cat_productos3">div cat productos3</div>
-                <div class="cat_productos4">div cat productos4</div>
-                <div class="cat_productos5">div cat productos5</div>
-            </div>
-                <div class="promos">
-                <div class="titulo_promociones titulo">promociones</div>
-                <div class="carrusel_promos">carrusel promos</div>
-            </div>
-                <div class="detalles">
-                <div class="foto2">foto 2</div>
-                <div class="foto3">foto 3</div>
-                <div class="texto2">texto 2</div>
-                <div class="texto3">texto 3</div>
-            </div>
+        <div class="imagenInicio">
+                <img src="Imagenes/Banner.png" alt="Imagen a ancho completo" class="imagen-ancha"/>
         </div>
-    <div class="header">footer</div>
+        <div class="contenedor">
+            <div class="catProductos">
+                <div class="titulo_cat_productos titulo"><b>CATEGORIAS</b> </div>
+                <div class="cat_productos1">
+                    <p>Audifonos</p>
+                    <img src="Imagenes/Audifonos.png" alt="" class="imagenes-categoria"/>
+                </div>
+                <div class="cat_productos2">
+                    <p>Componentes de PC</p>
+                    <img src="Imagenes/ComponentesPC.png" alt="" class="imagenes-categoria"/>
+                </div>
+                <div class="cat_productos3">
+                    <p>Laptops</p>
+                    <img src="Imagenes/Laptops.png" alt="" class="imagenes-categoria"/>
+                </div>
+                <div class="cat_productos4">
+                    <p>Tablets</p>
+                    <img src="Imagenes/Tablets.png" alt="" class="imagenes-categoria"/>
+                </div>
+                <div class="cat_productos5">
+                    <p>Mandos</p>
+                    <img src="Imagenes/mandos.png" alt="" class="imagenes-categoria"/>
+                </div>
+            </div>
+            
+            <div class="detalles">
+                <div class="foto2">
+                    <img src="Imagenes/foto2.png" alt=""/>
+                </div>
+                <div class="foto3">  
+                    <img src="Imagenes/foto3.png" alt=""/>
+                </div>
+                <div class="texto2">
+                    <p>"Explora una selección exclusiva de los mejores productos en un solo destino."</p>
+                </div>
+                <div class="texto3">"Descubre nuestra gama de productos de élite."</div>
+            </div>
+            <div class="promos">
+                <!--<div class="titulo_promociones titulo">Promociones</div>-->
+                <div class="slider-frame">
+                    <ul>
+                        <li><img src="Imagenes/promo1.png" alt=""></li>
+                        <li><img src="Imagenes/promo2.png" alt=""></li>
+                        <li><img src="Imagenes/promo3.png" alt=""></li>
+                        <li><img src="Imagenes/promo4.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <jsp:include page="footer.jsp"/>            
+        </div>
+
+    
+    
     </body>
 </html>

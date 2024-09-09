@@ -6,16 +6,18 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-body {
+body{
+    background: #c4dafa;
+}
+body .containerForm{
     margin: 0;
-    padding: 0;
+    padding: 20px 0; /* Espaciado superior e inferior reducido */
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 230vh;
+    min-height: 150vh;
     background-color: #c4dafa; /* Color de fondo */
 }
 
@@ -24,7 +26,7 @@ body {
 .numero {
     display: inline-block;
     padding: 10px;
-    border: 2px solid #007bff; /* Color del rectángulo (ej. color de botón) */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Color del rectángulo (ej. color de botón) */
     background-color: #e9ecef; /* Color de fondo del rectángulo */
     margin: 20px 0;
     border-radius: 5px;
@@ -47,7 +49,7 @@ h1, h2 {
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 h2 {
@@ -80,7 +82,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
     outline: none;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Botón de envío */
@@ -96,7 +98,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0e7a87;
+    background-color: #24262b;
     color: white;
 }
 
@@ -140,4 +142,13 @@ label {
 .page-item.active .page-link {
     background-color: #0056b3;
     border-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .form-container {
+        width: 100%;
+    }
+    body .containerForm{
+        width: 100%;
+        padding: 10px;
+    }
 }

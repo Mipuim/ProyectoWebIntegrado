@@ -10,44 +10,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Preguntas Frecuentes</title>
-        <style>
-            body {
-                font-family: "Times New Roman", Times, serif;
-                background-color: #c4dafa;
-                margin: 0;
-                padding: 0;
-            }
-            .faq-container {
-                max-width: 800px;
-                margin: 50px auto;
-                background: #fff;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            .faq-header {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            .faq-item {
-                margin-bottom: 15px;
-            }
-            .faq-question {
-                background: #007bff;
-                color: white;
-                padding: 10px;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            .faq-answer {
-                display: none;
-                padding: 10px;
-                background: #f9f9f9;
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                margin-top: 5px;
-            }
-        </style>
+        <link href="estilos/estilosPreguntas.css" rel="stylesheet" type="text/css"/>
         <script>
             function toggleAnswer(id) {
                 var answer = document.getElementById(id);
