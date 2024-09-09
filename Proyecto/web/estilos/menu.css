@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-image: url("https://images8.alphacoders.com/135/thumb-1920-1352315.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  padding: 1.4rem 1rem;
+  background-color: #000000b5;
+  backdrop-filter: blur(10px);
+  border-radius: 3rem;
+  margin-top: 1rem;
+  box-shadow: 1px 2px 3px rgb(74, 153, 191);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+li {
+  padding: 0rem 1.1rem;
+  float: left;
+}
+
+li a {
+  color: rgb(227, 141, 206);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+ul li a {
+  position: relative;
+}
+
+ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+ul li a::before {
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+ul li a:hover::before {
+  transform: scale(1, 1);
+}
+li a.active,
+li a:hover {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#click {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    max-width: 98%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  nav {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 85%;
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  li {
+    padding: 1rem 1.1rem;
+  }
+
+  .menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  ul {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 4rem;
+    left: -100%;
+    background-color: #000000b5;
+    backdrop-filter: blur(10px);
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+    transition: all 0.3s ease;
+  }
+}
