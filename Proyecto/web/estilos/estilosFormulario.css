@@ -1,9 +1,143 @@
-.contenedor {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    outline:none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.contenedor .titulo{
-    background: #000;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 230vh;
+    background-color: #c4dafa; /* Color de fondo */
+}
+
+/* Espacio para el header */
+
+.numero {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #007bff; /* Color del rectángulo (ej. color de botón) */
+    background-color: #e9ecef; /* Color de fondo del rectángulo */
+    margin: 20px 0;
+    border-radius: 5px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 30px;
+    width: 600px; /* Ajustado para más campos */
+    text-align: center;
+}
+
+/* Títulos principales */
+h1, h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* Texto general */
+p {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+/* Estilo cuando el campo está en foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0e7a87;
+    color: white;
+}
+
+
+/* Leyendas de cada sección (títulos de los fieldsets) */
+legend {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las etiquetas de cada campo */
+label {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+
+/* Estilo de la paginación */
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    color: white;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.page-link:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.page-item.active .page-link {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
