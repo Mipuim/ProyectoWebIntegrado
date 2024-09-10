@@ -134,7 +134,7 @@
                 <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
                 <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
-        </section>
+        </section>   
         <script src="JavaScript/slider.js" type="text/javascript"></script>
     </body>
 </html>
