@@ -4,7 +4,21 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+.custom-alert {
+    background-color: rgba(255, 0, 0, 0.8); /* Color de fondo rojo con transparencia */
+    color: #fff; /* Color del texto */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Borde blanco con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado en la parte inferior */
+}
+.custom-alert {
+    transition: all 0.3s ease; /* Transición suave para cambios */
+}
 
+.custom-alert:hover {
+    background-color: rgba(255, 0, 0, 1); /* Cambiar el color al pasar el mouse */
+}
 body{
     display: grid;
     grid-template-rows:auto auto auto;
@@ -76,7 +90,7 @@ body .ola3{
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
 
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     padding: 15px 15px 15px 15px;
 }
@@ -93,7 +107,7 @@ body .ola3{
 .contenedor .remember{
     display: flex;
     justify-content: space-between;
-    font-size: 14.5px;
+    font-size: 16px;
     margin: 15px 0 15px;
 }
 .remember label input{
@@ -126,7 +140,7 @@ body .ola3{
     color: #fff;
 }
 .contenedor .register-lin{
-    font-size: 14.5px;
+    font-size: 16px;
     text-align: center;
     margin-top: 20px;
 }

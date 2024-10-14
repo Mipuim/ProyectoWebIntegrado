@@ -68,7 +68,7 @@
                     </ul>
                 </div>
             </div>
-            <jsp:include page="footer.jsp"/>            
+            <%@ include file="/vista/componentes/footer.jsp" %>        
         </div>
 
     
