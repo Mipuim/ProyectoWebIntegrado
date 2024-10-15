@@ -11,6 +11,7 @@
         <meta charset="UTF-8">
         <title>Preguntas Frecuentes</title>
         <link href="${pageContext.request.contextPath}/estilos/estilosPreguntas.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script>
             function toggleAnswer(id) {
                 var answer = document.getElementById(id);
@@ -28,6 +29,10 @@
 
     <body>
         <div class="faq-container">
+            <div class="container-logo">
+                <i class="fa-solid fa-dragon"></i>
+                <h1 class="logo"><a href="/">Foley</a></h1>
+            </div>
             <h2 class="faq-header">Preguntas Frecuentes</h2>
 
             <div class="faq-item">
