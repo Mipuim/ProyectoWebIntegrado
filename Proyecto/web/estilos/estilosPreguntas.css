@@ -12,18 +12,21 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
 }
+
 .faq-header {                
     text-align: center;            
     margin-bottom: 20px;
     font-size: 24px;
 }
+
 .faq-item {            
     margin-bottom: 15px;
     line-height: 1.4; /* Ajusta el espaciado entre líneas */
     font-weight: normal; /* Asegúrate de que no esté en bold */
 }
+
 .faq-question {
-    background: #007bff;
+    background: #5e67f5;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -34,15 +37,19 @@ body {
     align-items: center;
     transition: background 0.3s ease;
 }
+
 .faq-question:hover {
     background: #0056b3;
 }
+
 .faq-question .arrow {
     transition: transform 0.3s ease;
 }
+
 .faq-question.active .arrow {
     transform: rotate(180deg); /* Flecha hacia arriba */
 }
+
 .faq-answer {               
     display: none;    
     padding: 10px;    
@@ -51,4 +58,30 @@ body {
     border-radius: 5px;    
     margin-top: 5px;    
     font-size: 16px;
+}
+
+/* Alineación y estilos del logo y el título */
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo del logo */
+}
+
+.container-logo i {
+    font-size: 2.4rem; /* Ajusta el tamaño del icono para que coincida con el texto */
+}
+
+.container-logo h1 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2.4rem; /* El mismo tamaño que el icono */
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+/* Estilo de la cabecera para mantener todo centrado */
+h1.logo {
+    margin: 0;
 }
