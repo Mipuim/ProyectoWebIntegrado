@@ -24,7 +24,9 @@
                 </div>
 
                 <div class="container-user">
-                    <i class="fa-solid fa-user"></i>
+                    <a href="../paginas/login.jsp">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
                     <i class="fa-solid fa-basket-shopping"></i>
                     <div class="content-shopping-cart">
                         <span class="text">Carrito</span>
